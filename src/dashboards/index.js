@@ -22,7 +22,6 @@ const createDashboard = (service, stage, region, functions, name, properties) =>
   }
   const mergedProperties = getProperties(properties)
 
-  console.log("MERGED PROPERTIES", mergedProperties);
 
   const widgets = dashboard.widgets.map((w) => {
     const widget = widgetFactory.getWidget(w.service, w.metric, w.display);
