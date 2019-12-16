@@ -1,5 +1,5 @@
 {
-  "name": "@perform/serverless-aws-alerts-plugin",
+  "name": "@dazn/serverless-aws-alerts-plugin",
   "version": "1.0.1",
   "description": "",
   "main": "src/index.js",
@@ -29,5 +29,9 @@
     "eslint-plugin-promise": "^3.4.1",
     "eslint-plugin-standard": "^2.0.1",
     "jest": "^19.0.2"
+  },
+  "publishConfig": {
+    "@dazn:registry": "https://registry.npmjs.org/",
+    "access": "restricted"
   }
 }
