@@ -1,0 +1,10 @@
+pipeline:
+  publish:
+    image: node:10-alpine
+    secrets: [npm_token]
+    commands:
+      - npm config set //registry.npmjs.org/:_authToken $NPM_TOKEN
+      - npm publish
+    when:
+      event: push
+      branch: master
